@@ -1,0 +1,635 @@
+[gd_scene load_steps=47 format=1]
+
+[ext_resource path="res://main.gd" type="Script" id=1]
+[ext_resource path="res://explosion.png" type="Texture" id=2]
+[ext_resource path="res://Particles2D.tscn" type="PackedScene" id=3]
+[ext_resource path="res://ardelaney.fnt" type="BitmapFont" id=4]
+[ext_resource path="res://b0.png" type="Texture" id=5]
+[ext_resource path="res://b1.png" type="Texture" id=6]
+[ext_resource path="res://b2.png" type="Texture" id=7]
+[ext_resource path="res://b3.png" type="Texture" id=8]
+[ext_resource path="res://b4.png" type="Texture" id=9]
+[ext_resource path="res://b5.png" type="Texture" id=10]
+[ext_resource path="res://b6.png" type="Texture" id=11]
+[ext_resource path="res://b7.png" type="Texture" id=12]
+[ext_resource path="res://b8.png" type="Texture" id=13]
+[ext_resource path="res://b10.png" type="Texture" id=14]
+[ext_resource path="res://b11.png" type="Texture" id=15]
+[ext_resource path="res://b12.png" type="Texture" id=16]
+[ext_resource path="res://b13.png" type="Texture" id=17]
+[ext_resource path="res://b14.png" type="Texture" id=18]
+[ext_resource path="res://b15.png" type="Texture" id=19]
+[ext_resource path="res://b16.png" type="Texture" id=20]
+[ext_resource path="res://1.png" type="Texture" id=21]
+[ext_resource path="res://2.png" type="Texture" id=22]
+[ext_resource path="res://3.png" type="Texture" id=23]
+[ext_resource path="res://4.png" type="Texture" id=24]
+[ext_resource path="res://5.png" type="Texture" id=25]
+[ext_resource path="res://6.png" type="Texture" id=26]
+[ext_resource path="res://7.png" type="Texture" id=27]
+[ext_resource path="res://8.png" type="Texture" id=28]
+[ext_resource path="res://9.png" type="Texture" id=29]
+[ext_resource path="res://10.png" type="Texture" id=30]
+[ext_resource path="res://11.png" type="Texture" id=31]
+[ext_resource path="res://12.png" type="Texture" id=32]
+[ext_resource path="res://titell.png" type="Texture" id=33]
+[ext_resource path="res://play2.png" type="Texture" id=34]
+[ext_resource path="res://play.png" type="Texture" id=35]
+
+[sub_resource type="Animation" id=1]
+
+resource/name = "New Anim"
+length = 2.1
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("title/Label:rect/pos")
+tracks/0/interp = 2
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 0.5, 1 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 43, 162 ), Vector2( 43, 122 ), Vector2( 43, 162 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("title/Label1:rect/pos")
+tracks/1/interp = 2
+tracks/1/imported = false
+tracks/1/keys = {
+"times": FloatArray( 0, 0.3, 0.8, 1.3 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 333, 90 ), Vector2( 333, 90 ), Vector2( 333, 50 ), Vector2( 333, 90 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("title/Label2:rect/pos")
+tracks/2/interp = 2
+tracks/2/imported = false
+tracks/2/keys = {
+"times": FloatArray( 0, 0.5, 1, 1.5 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 489, 70 ), Vector2( 489, 70 ), Vector2( 489, 30 ), Vector2( 489, 70 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("title/Label3:rect/pos")
+tracks/3/interp = 2
+tracks/3/imported = false
+tracks/3/keys = {
+"times": FloatArray( 0, 0.8, 1.3, 1.8 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 782, 90 ), Vector2( 782, 90 ), Vector2( 782, 50 ), Vector2( 782, 90 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("title/Label4:rect/pos")
+tracks/4/interp = 2
+tracks/4/imported = false
+tracks/4/keys = {
+"times": FloatArray( 0, 1, 1.5, 2 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1061, 162 ), Vector2( 1061, 162 ), Vector2( 1061, 122 ), Vector2( 1061, 162 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+
+resource/name = "New Anim"
+length = 2.5
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("title/Polygon2D:transform/rot")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 0.5, 1, 1.5, 2, 2.5 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 20.0, 0.0, -20.0, 0.0, -20.0 ]
+}
+
+[sub_resource type="SpriteFrames" id=3]
+
+animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ) ],
+"loop": true,
+"name": "default",
+"speed": 60.0
+} ]
+
+[sub_resource type="CircleShape2D" id=4]
+
+custom_solver_bias = 0.0
+radius = 53.0
+
+[sub_resource type="SpriteFrames" id=5]
+
+animations = [ {
+"frames": [ ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ) ],
+"loop": true,
+"name": "default",
+"speed": 20.0
+} ]
+
+[sub_resource type="GDScript" id=6]
+
+script/source = " "
+
+[sub_resource type="SegmentShape2D" id=7]
+
+custom_solver_bias = 0.0
+a = Vector2( 2051.27, -7.8443 )
+b = Vector2( 7.9494, -18.0642 )
+
+[sub_resource type="GDScript" id=8]
+
+script/source = "extends Node2D
+
+# class member variables go here, for example:
+# var a = 2
+# var b = \"textvar\"
+onready var a = get_node(\"a\")
+onready var sprite =get_node(\"AnimatedSprite\")
+func _ready():
+	# Called every time the node is added to the scene.
+	# Initialization here
+	pass
+
+
+func _on_Button_button_down():
+	sprite.set_frame(1)
+	sprite.set_scale(Vector2(0.93,0.93))
+	a.stop(false)
+	pass # replace with function body
+
+
+func _on_Button_button_up():
+	a.play(\"New Anim\")
+	
+	sprite.set_frame(0)
+	sprite.set_scale(Vector2(1,1))
+	pass # replace with function body
+
+
+func _on_Button_pressed():
+	get_tree().change_scene(\"res://game.tscn\")
+	pass # replace with function body
+"
+
+[sub_resource type="SpriteFrames" id=9]
+
+animations = [ {
+"frames": [ ExtResource( 34 ), ExtResource( 35 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="Animation" id=10]
+
+resource/name = "New Anim"
+length = 1.0
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:transform/scale")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 0.5, 1 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.1, 1.1 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+
+resource/name = "New Anim"
+length = 1.0
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:transform/rot")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 1 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 360.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:transform/scale")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = {
+"times": FloatArray( 0, 0.5, 1 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ), Vector2( 3, 3 ), Vector2( 1e-05, 1e-05 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sprite1:transform/rot")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = {
+"times": FloatArray( 0.556775, 1 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, -360.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Sprite1:transform/scale")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = {
+"times": FloatArray( 0, 0.5, 1 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 3, 3 ), Vector2( 0.3, 0.3 ), Vector2( 3, 3 ) ]
+}
+
+[node name="Node2D" type="Control"]
+
+anchor/left = 3
+anchor/top = 3
+anchor/right = 3
+anchor/bottom = 3
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 683.0
+margin/top = 384.0
+margin/right = 683.0
+margin/bottom = 384.0
+script/script = ExtResource( 1 )
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+
+transform/pos = Vector2( 65.6708, 52.5744 )
+polygon = Vector2Array( -262.72, -204.93, -283.744, 985.011, 1675.66, 938.759, 1712.68, -174.129 )
+uv = Vector2Array(  )
+color = Color( 0.0325012, 0.260958, 0.554688, 1 )
+vertex_colors = ColorArray(  )
+offset = Vector2( 0, 0 )
+texture/texture = null
+texture/offset = Vector2( 0, 0 )
+texture/scale = Vector2( 1, 1 )
+texture/rotation = 0.0
+invert/enable = false
+invert/border = 100.0
+
+[node name="Sprite" type="Sprite" parent="."]
+
+transform/pos = Vector2( 733, 490 )
+transform/rot = 180.0
+transform/scale = Vector2( 3, 3 )
+texture = ExtResource( 2 )
+
+[node name="Sprite1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 733, 490 )
+transform/rot = -36.7096
+transform/scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+
+[node name="Particles2D" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 696.061, 173.417 )
+params/linear_velocity = 140.0
+params/initial_size = 3.0
+params/final_size = 3.0
+
+[node name="title" type="Node2D" parent="."]
+
+visibility/visible = false
+
+[node name="Label" type="Label" parent="title"]
+
+rect/scale = Vector2( 2, 2 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = -15.0
+margin/top = -36.0
+margin/right = 106.0
+margin/bottom = 156.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0.558594, 0.0414581, 0.174782, 1 )
+text = "B"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label1" type="Label" parent="title"]
+
+rect/scale = Vector2( 2, 2 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 196.0
+margin/top = -31.0
+margin/right = 261.0
+margin/bottom = 143.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0.0964355, 0.617188, 0.141188, 1 )
+text = "I"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label2" type="Label" parent="title"]
+
+rect/scale = Vector2( 2, 2 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 293.0
+margin/top = -32.0
+margin/right = 432.0
+margin/bottom = 142.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0.855469, 0.668152, 0.170425, 1 )
+text = "N"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label3" type="Label" parent="title"]
+
+rect/scale = Vector2( 2, 2 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 543.0
+margin/top = -24.0
+margin/right = 689.0
+margin/bottom = 158.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0.357254, 0.126953, 0.8125, 1 )
+text = "G"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label4" type="Label" parent="title"]
+
+rect/scale = Vector2( 2, 2 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 801.0
+margin/top = -25.0
+margin/right = 954.0
+margin/bottom = 149.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0.065918, 0.570293, 0.84375, 1 )
+text = "O"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Polygon2D" type="Polygon2D" parent="title"]
+
+transform/pos = Vector2( 1164.94, 585.997 )
+transform/rot = -9.38977
+polygon = Vector2Array( 2052.55, 582.197, 2035.42, 551.374, 2086.79, 537.675, 2141.59, 530.825, 2134.74, 558.223, 2148.44, 626.719, 2210.09, 664.392, 2264.88, 695.215, 2261.46, 732.887, 2138.16, 780.834, 2028.57, 797.958, 2001.17, 770.56, 2018.3, 722.613, 2083.37, 657.542 )
+uv = Vector2Array(  )
+color = Color( 0.863281, 0.296753, 0.655259, 1 )
+vertex_colors = ColorArray(  )
+offset = Vector2( -2126.54, -674.333 )
+texture/texture = null
+texture/offset = Vector2( 0, 0 )
+texture/scale = Vector2( 1, 1 )
+texture/rotation = 0.0
+invert/enable = false
+invert/border = 100.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="titleanim" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+"anims/New Anim" = SubResource( 1 )
+playback/active = true
+playback/speed = 2.0
+blend_times = [  ]
+autoplay = "New Anim"
+
+[node name="bingo" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+"anims/New Anim" = SubResource( 2 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "New Anim"
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+
+transform/pos = Vector2( 306.098, 542.52 )
+transform/scale = Vector2( 0.7, 0.7 )
+frames = SubResource( 3 )
+animation = "default"
+playing = true
+centered = false
+offset = Vector2( -212.395, -252.691 )
+
+[node name="AnimatedSprite1" type="AnimatedSprite" parent="."]
+
+transform/pos = Vector2( 1137.32, 540.635 )
+transform/scale = Vector2( 0.7, 0.7 )
+frames = SubResource( 3 )
+animation = "default"
+playing = true
+centered = false
+offset = Vector2( -212.395, -252.691 )
+flip_h = true
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+transform/pos = Vector2( 1167.34, 226 )
+input/pickable = false
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+mode = 0
+mass = 3.0
+friction = 1.0
+bounce = 0.3
+gravity_scale = 0.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+velocity/linear = Vector2( 0, 0 )
+velocity/angular = 0.0
+damp_override/linear = -1.0
+damp_override/angular = -1.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+
+shape = SubResource( 4 )
+trigger = false
+_update_shape_index = 0
+
+[node name="AnimatedSprite 2" type="AnimatedSprite" parent="RigidBody2D"]
+
+transform/scale = Vector2( 0.4, 0.4 )
+frames = SubResource( 5 )
+animation = "default"
+frame = 7
+playing = true
+flip_h = true
+script/script = SubResource( 6 )
+
+[node name="RigidBody2D1" type="RigidBody2D" parent="."]
+
+transform/pos = Vector2( 244.603, 267.701 )
+input/pickable = false
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+mode = 0
+mass = 3.0
+friction = 1.0
+bounce = 0.3
+gravity_scale = 0.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+velocity/linear = Vector2( 0, 0 )
+velocity/angular = 0.0
+damp_override/linear = -1.0
+damp_override/angular = -1.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D1"]
+
+shape = SubResource( 4 )
+trigger = false
+_update_shape_index = 0
+
+[node name="AnimatedSprite 2" type="AnimatedSprite" parent="RigidBody2D1"]
+
+transform/scale = Vector2( 0.4, 0.4 )
+frames = SubResource( 5 )
+animation = "default"
+frame = 7
+playing = true
+script/script = SubResource( 6 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+transform/pos = Vector2( -210.179, 791.262 )
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Sprite3D" type="Sprite" parent="."]
+
+transform/pos = Vector2( 689.785, 215.666 )
+transform/scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 33 )
+
+[node name="Node2D" type="Node2D" parent="."]
+
+transform/pos = Vector2( 733, 490 )
+script/script = SubResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Node2D"]
+
+frames = SubResource( 9 )
+animation = "default"
+
+[node name="Button" type="Button" parent="Node2D"]
+
+visibility/opacity = 0.0
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -127.0
+margin/top = -124.0
+margin/right = 125.0
+margin/bottom = 126.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+
+[node name="a" type="AnimationPlayer" parent="Node2D"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+"anims/New Anim" = SubResource( 10 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "New Anim"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+"anims/New Anim" = SubResource( 11 )
+playback/active = true
+playback/speed = 0.1
+blend_times = [  ]
+autoplay = "New Anim"
+
+[connection signal="button_down" from="Node2D/Button" to="Node2D" method="_on_Button_button_down"]
+
+[connection signal="button_up" from="Node2D/Button" to="Node2D" method="_on_Button_button_up"]
+
+[connection signal="pressed" from="Node2D/Button" to="Node2D" method="_on_Button_pressed"]
+
+
